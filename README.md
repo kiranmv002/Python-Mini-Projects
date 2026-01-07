@@ -16,6 +16,8 @@ through hands-on coding.
   A menu-driven command-line calculator that allows users to perform
   basic arithmetic operations such as addition, subtraction,
   multiplication, and division with proper input handling.
+  Supports modulus (%) operation
+
 
 ---
 
