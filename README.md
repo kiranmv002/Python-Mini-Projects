@@ -18,6 +18,11 @@ through hands-on coding.
   multiplication, and division with proper input handling.
   Supports modulus (%) operation
 
+- Number Guessing Game  
+  A simple command-line game where the program generates a random number
+  and the user tries to guess it within a limited number of attempts.
+  This project was created to practice loops, conditions, and input handling.
+
 
 ---
 
