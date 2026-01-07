@@ -19,10 +19,9 @@ through hands-on coding.
   Supports modulus (%) operation
 
 - Number Guessing Game  
-  A simple command-line game where the program generates a random number
-  and the user tries to guess it within a limited number of attempts.
-  This project was created to practice loops, conditions, and input handling.
-
+  A console-based Python game where the computer randomly selects
+  a number and the user tries to guess it within a limited number
+  of attempts. The program provides hints to guide the user.
 
 ---
 
