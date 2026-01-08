@@ -21,7 +21,9 @@ through hands-on coding.
 - Number Guessing Game  
   A console-based Python game where the computer randomly selects
   a number and the user tries to guess it within a limited number
-  of attempts. The program provides hints to guide the user.
+  of attempts. The program provides hints to guide the user.Includes
+  an option to replay the game without restarting the program.
+
 
 ---
 
