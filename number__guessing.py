@@ -45,7 +45,7 @@ def play_game():
 
 def number_guessing_game():
     print("Number Guessing Game")
-    print("--------------------")
+    print("-------------------")
 
     while True:
         play_game()
