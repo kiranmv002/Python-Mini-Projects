@@ -24,6 +24,11 @@ through hands-on coding.
   of attempts. The program provides hints to guide the user.Includes
   an option to replay the game without restarting the program.
 
+- Password Generator  
+  A simple console-based Python program that generates
+  a random password based on the length entered by the user.
+  It uses letters, numbers, and symbols to create strong passwords.
+
 
 ---
 
