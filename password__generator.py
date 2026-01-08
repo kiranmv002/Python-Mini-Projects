@@ -1,0 +1,52 @@
+"""
+Password Generator (Console Based)
+
+This program creates a random password using
+letters, numbers, and special symbols.
+It was written to practice loops, conditions,
+and basic user input handling.
+
+Author: Kiran
+"""
+
+import random
+
+
+def create_password(length):
+    letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    numbers = "0123456789"
+    symbols = "!@#$%^&*()_+-="
+
+    all_characters = letters + numbers + symbols
+    password = ""
+
+    for i in range(length):
+        password = password + random.choice(all_characters)
+
+    return password
+
+
+def start():
+    print("Simple Password Generator")
+    print("-------------------------")
+
+    user_length = input("Enter password length: ")
+
+    if not user_length.isdigit():
+        print("Length must be a number.")
+        return
+
+    length = int(user_length)
+
+    if length < 6:
+        print("Password length should be at least 6 characters.")
+        return
+
+    generated_password = create_password(length)
+
+    print("\nYour generated password is:")
+    print(generated_password)
+
+
+if __name__ == "__main__":
+    start()
