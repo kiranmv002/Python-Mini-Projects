@@ -11,17 +11,14 @@ Author: Kiran
 import random
 
 
-def number_guessing_game():
-    print("Number Guessing Game")
-    print("--------------------")
-
+def play_game():
     start = 1
     end = 50
     secret = random.randint(start, end)
     attempts = 5
 
-    print(f"I am thinking of a number between {start} and {end}.")
-    print(f"You have {attempts} chances to guess it correctly.\n")
+    print("\nI am thinking of a number between", start, "and", end)
+    print("You have", attempts, "chances to guess it correctly.\n")
 
     while attempts > 0:
         user_input = input("Enter your guess: ")
@@ -34,17 +31,29 @@ def number_guessing_game():
 
         if guess == secret:
             print("Well done! You guessed the correct number.")
-            break
+            return
         elif guess < secret:
             print("Your guess is too small.\n")
         else:
             print("Your guess is too large.\n")
 
         attempts -= 1
-        print(f"Attempts remaining: {attempts}\n")
+        print("Attempts remaining:", attempts, "\n")
 
-    if attempts == 0:
-        print(f"You have used all attempts. The number was {secret}.")
+    print("You have used all attempts. The number was", secret)
+
+
+def number_guessing_game():
+    print("Number Guessing Game")
+    print("--------------------")
+
+    while True:
+        play_game()
+        again = input("\nDo you want to play again? (y/n): ").lower()
+
+        if again != "y":
+            print("Thanks for playing!")
+            break
 
 
 if __name__ == "__main__":
