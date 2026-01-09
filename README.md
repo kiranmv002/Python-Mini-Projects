@@ -48,3 +48,9 @@ through hands-on coding.
 - Develop problem-solving skills using simple projects
 - Maintain consistency through daily GitHub contributions
 
+---
+
+## Notes
+These projects are created as part of daily practice to improve
+problem-solving skills and strengthen understanding of Python
+fundamental concepts through hands-on coding.
