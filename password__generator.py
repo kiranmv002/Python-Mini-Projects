@@ -46,7 +46,8 @@ def start():
 
     print("\nYour generated password is:")
     print(generated_password)
-
+    print("\nNote: Keep this password secure and do not share it with anyone.")
+    
 
 if __name__ == "__main__":
     start()
