@@ -28,8 +28,8 @@ through hands-on coding.
   A simple console-based Python program that generates
   a random password based on the length entered by the user.
   It uses letters, numbers, and symbols to create strong passwords.
-
-
+  and also reminds the user to keep the generated password secure.
+  
 ---
 
 ## Language Used
