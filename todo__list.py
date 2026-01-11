@@ -73,8 +73,9 @@ def main():
             add_task()
         elif option == "3":
             remove_task()
-        elif option == "4":
-            print("Exiting To-Do List. Goodbye!")
+        elif user_choice == "4":
+            print("\nYou have exited the To-Do List.")
+            print("Good luck with your tasks. See you next time!")
             break
         else:
             print("Invalid option. Please try again.")
