@@ -27,7 +27,7 @@ def multiply_numbers(x, y):
     return x * y
 
 
-def divide(a, b):
+def divide_numbers(a, b):
     """Returns the division of two numbers"""
     if b == 0:
         return "Error: Division by zero"
@@ -37,17 +37,17 @@ def modulus_numbers(x, y):
     return x % y
 
 def main():
-    print("Welcome to Simple Calculator")
+    print("Welcome to the Simple Calculator")
 
     while True:
         show_menu()
-        choice = input("Enter your choice (1–5): ")
+        choice = input("Enter your choice (1–6): ")
 
-        if choice == "5":
+        if choice == "6":
             print("Thank you for using the calculator.")
             break
 
-        if choice not in ["1", "2", "3", "4"]:
+        if choice not in ["1", "2", "3", "4", "5"]:
             print("Invalid choice! Please select again.")
             continue
 
@@ -70,6 +70,9 @@ def main():
         elif choice == "4":
             result = divide_numbers(num1, num2)
             operation = "Division"
+         elif choice == "5":
+            result = modulus_numbers(num1, num2)
+            operation = "Modulus"
 
         print(f"{operation} Result: {result}")
 
