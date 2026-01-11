@@ -35,6 +35,17 @@ through hands-on coding.
   to add, view, and remove tasks.This project was created to practice
   list operations, loops, and basic user interaction in Python.
 
+
+- Contact Book (CLI)  
+  A simple command-line contact book application that allows users
+  to store contact details such as name and phone number. Users can
+  add new contacts, view all saved contacts, search for a specific
+  contact by name, and delete unwanted contacts. This project was
+  created to practice list and dictionary usage along with basic
+  menu-driven program logic in Python.
+
+
+
 ---
 
 ## Language Used
