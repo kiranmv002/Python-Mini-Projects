@@ -16,7 +16,8 @@ through hands-on coding.
   A menu-driven command-line calculator that allows users to perform
   basic arithmetic operations such as addition, subtraction,
   multiplication, and division with proper input handling.
-  Supports modulus (%) operation
+  Supports modulus (%) operation. The program also handles invalid input
+  and provides a clean exit option for better user experience.
 
 - Number Guessing Game  
   A console-based Python game where the computer randomly selects
