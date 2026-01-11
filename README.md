@@ -32,9 +32,9 @@ through hands-on coding.
 
 - To-Do List (CLI)  
   A simple command-line to-do list application that allows users
-  to add, view, and remove tasks. This project was created to
-  practice list operations, loops, and menu-driven programs in Python.
-  
+  to add, view, and remove tasks.This project was created to practice
+  list operations, loops, and basic user interaction in Python.
+
 ---
 
 ## Language Used
