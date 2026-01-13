@@ -38,6 +38,12 @@ def add_contact():
         print("Name and phone number cannot be empty.")
         return
 
+    # Check for duplicate contact name
+    for contact in contacts:
+        if contact["name"].lower() == name.lower():
+            print("Contact with this name already exists.")
+            return
+
     contacts.append({
         "name": name,
         "phone": phone
