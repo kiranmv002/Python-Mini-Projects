@@ -39,12 +39,12 @@ through hands-on coding.
 
 
 - Contact Book (CLI)  
-  A simple command-line contact book application that allows users
-  to store contact details such as name and phone number. Users can
-  add new contacts, view all saved contacts, search for a specific
-  contact by name, and delete unwanted contacts. This project was
-  created to practice list and dictionary usage along with basic
-  menu-driven program logic in Python.
+  This is a simple command-line contact book application written in Python.
+  It helps users store and manage contact details like name and phone number.
+  Users can add new contacts, view all saved contacts, search for a contact
+  by name, and delete contacts when they are no longer needed. The program
+  also checks for duplicate contact names to avoid adding the same contact
+  more than once.
 
 
 
