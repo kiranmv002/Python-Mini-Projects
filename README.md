@@ -26,10 +26,11 @@ through hands-on coding.
   an option to replay the game without restarting the program.
 
 - Password Generator  
-  A simple console-based Python program that generates
-  a random password based on the length entered by the user.
-  It uses letters, numbers, and symbols to create strong passwords.
-  and also reminds the user to keep the generated password secure.
+  A simple command-line password generator built using Python.
+  The program generates a random password based on the length
+  provided by the user and includes letters, numbers, and symbols.
+  It also validates the input length and reminds users to keep
+  their passwords secure.
 
 - To-Do List (CLI)  
   A simple command-line to-do list application that allows users
