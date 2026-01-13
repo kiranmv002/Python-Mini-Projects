@@ -42,6 +42,10 @@ def start():
         print("Password length should be at least 6 characters.")
         return
 
+    if length > 20:
+        print("Please choose a password length of 20 characters or less.")
+        return
+
     generated_password = create_password(length)
 
     print("\nYour generated password is:")
