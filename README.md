@@ -73,3 +73,11 @@ through hands-on coding.
 These projects are created as part of daily practice to improve
 problem-solving skills and strengthen understanding of Python
 fundamental concepts through hands-on coding.
+
+---
+
+## What I Learned
+Through these mini projects, I practiced writing simple Python programs
+using functions, loops, lists, and dictionaries. I also learned how to
+handle user input, validate data, and improve programs step by step
+based on new requirements.
