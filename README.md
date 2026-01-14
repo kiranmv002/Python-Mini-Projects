@@ -76,9 +76,9 @@ through hands-on coding.
 ---
 
 ## Notes
-These projects are created as part of daily practice to improve
-problem-solving skills and strengthen understanding of Python
-fundamental concepts through hands-on coding.
+
+These projects are updated regularly as part of daily Python practice
+to improve coding skills and problem-solving ability.
 
 ---
 
