@@ -53,6 +53,12 @@ through hands-on coding.
   the correct answer is displayed to help with learning. This project
   was created to practice lists, loops, and basic conditional logic.
 
+- Temperature Converter (CLI)  
+  A simple command-line temperature converter written in Python.
+  The program allows users to convert values between Celsius and
+  Fahrenheit based on their choice. This project was created to
+  practice conditional statements, functions, and user input handling.
+
 
 ---
 
