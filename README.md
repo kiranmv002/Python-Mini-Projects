@@ -48,10 +48,10 @@ through hands-on coding.
 
 - Quiz App (CLI)  
   This is a simple command-line quiz application written in Python.
-  The program asks the user a set of multiple-choice questions and
-  calculates the final score based on the answers given. It was created
-  to practice basic Python concepts such as lists, loops, and conditional
-  statements in a simple and interactive way.
+  The program asks multiple-choice questions and calculates the final
+  score based on the user’s answers. If the user selects a wrong option,
+  the correct answer is displayed to help with learning. This project
+  was created to practice lists, loops, and basic conditional logic.
 
 
 ---
