@@ -34,10 +34,11 @@ def quiz_app():
         user_answer = input("Enter your answer (A/B/C/D): ").strip().upper()
 
         if user_answer == q["answer"]:
-            print("Correct!")
-            score += 1
+           print("Correct!")
+           score += 1
         else:
-            print("Wrong answer.")
+           print("Wrong answer.")
+           print(f"The correct answer was: {q['answer']}")
 
     print("\nQuiz Finished")
     print(f"You scored {score} out of {len(questions)}")
