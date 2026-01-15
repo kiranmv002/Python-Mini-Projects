@@ -39,7 +39,7 @@ def start():
     length = int(user_length)
 
     if length < 6:
-        print("Password length should be at least 6 characters.")
+        print("Password length should be at least more 6 characters.")
         return
 
     if length > 20:
