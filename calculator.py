@@ -44,7 +44,7 @@ def main():
         choice = input("Enter your choice (1–6): ")
 
         if choice == "6":
-            print("Thank you for using the calculator.")
+            print("Thank you for using the calculator. Have a great day!")
             break
 
         if choice not in ["1", "2", "3", "4", "5"]:
