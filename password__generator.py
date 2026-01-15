@@ -11,7 +11,7 @@ Author: Kiran
 
 import random
 
-
+print("Tip: Use strong passwords and avoid reusing them.")
 def create_password(length):
     letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     numbers = "0123456789"
