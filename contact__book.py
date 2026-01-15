@@ -37,6 +37,9 @@ def add_contact():
     if name == "" or phone == "":
         print("Name and phone number cannot be empty.")
         return
+    if not phone.isdigit() or len(phone) != 10:
+        print("Phone number must be exactly 10 digits.")
+        return
 
     # Check for duplicate contact name
     for contact in contacts:
