@@ -64,7 +64,6 @@ through hands-on coding.
 
 ## Language Used
 - Python
-
 ---
 
 ## Purpose of This Repository
