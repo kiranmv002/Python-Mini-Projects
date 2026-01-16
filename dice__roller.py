@@ -17,6 +17,7 @@ def main():
         choice = input("Roll the dice? (y/n): ").strip().lower()
 
         if choice == "y":
+            result = roll_dice()
             roll_count += 1
             print(f"You rolled a {result}")
             print(f"Total rolls so far: {roll_count}\n")
