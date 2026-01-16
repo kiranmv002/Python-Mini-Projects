@@ -59,6 +59,12 @@ through hands-on coding.
   Fahrenheit based on their choice. This project was created to
   practice conditional statements, functions, and user input handling.
 
+- Dice Rolling Simulator (CLI)  
+  This is a simple command-line dice rolling simulator written in Python.
+  The program generates a random number between 1 and 6 each time the user
+  chooses to roll the dice. Users can roll the dice multiple times or exit
+  the program whenever they want. This project was created to practice
+  random number generation, loops, and basic user input handling in Python.
 
 ---
 
