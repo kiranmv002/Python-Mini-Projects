@@ -12,13 +12,15 @@ def roll_dice():
 def main():
     print("Dice Rolling Simulator")
     print("----------------------")
-
+    roll_count = 0
     while True:
         choice = input("Roll the dice? (y/n): ").strip().lower()
 
         if choice == "y":
-            result = roll_dice()
-            print(f"You rolled a {result}\n")
+            roll_count += 1
+            print(f"You rolled a {result}")
+            print(f"Total rolls so far: {roll_count}\n")
+
         elif choice == "n":
             print("Thanks for playing. Goodbye!")
             break
