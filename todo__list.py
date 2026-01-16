@@ -73,12 +73,13 @@ def main():
             add_task()
         elif option == "3":
             remove_task()
-        elif user_choice == "4":
+        elif option == "4":
             print("\nYou have exited the To-Do List.")
             print("Good luck with your tasks. See you next time!")
             break
         else:
             print("Invalid option. Please try again.")
+	print(f"Total tasks: {len(tasks)}")
 
 if __name__ == "__main__":
     main()
