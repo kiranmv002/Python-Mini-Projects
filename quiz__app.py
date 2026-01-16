@@ -32,6 +32,10 @@ def quiz_app():
             print(option)
 
         user_answer = input("Enter your answer (A/B/C/D): ").strip().upper()
+	
+	if user_answer not in ["A", "B", "C", "D"]:
+           print("Please enter a valid option (A, B, C, or D).")
+           continue
 
         if user_answer == q["answer"]:
            print("Correct!")
