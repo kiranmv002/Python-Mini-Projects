@@ -31,8 +31,7 @@ def quiz_app():
         for option in q["options"]:
             print(option)
 
-        user_answer = input("Enter your answer (A/B/C/D): ").strip().upper()
-	
+        user_answer = input("Enter your answer (A/B/C/D): ").strip().upper()	
 	if user_answer not in ["A", "B", "C", "D"]:
            print("Please enter a valid option (A, B, C, or D).")
            continue
@@ -40,13 +39,13 @@ def quiz_app():
         if user_answer == q["answer"]:
            print("Correct!")
            score += 1
+
         else:
            print("Wrong answer.")
            print(f"The correct answer was: {q['answer']}")
 
     print("\nQuiz Finished")
     print(f"You scored {score} out of {len(questions)}")
-
 
 if __name__ == "__main__":
     quiz_app()
