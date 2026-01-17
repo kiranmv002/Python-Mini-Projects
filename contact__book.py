@@ -1,4 +1,4 @@
-"""
+\"""
 Contact Book (Command Line Application)
 
 This program is used to store and manage contact details.
@@ -55,7 +55,8 @@ def add_contact():
     print("Contact added successfully.")
 
 
-def search_contact():
+def search_contact():	
+    print("Searching contacts...")
     search_name = input("Enter name to search: ").strip().lower()
 
     for contact in contacts:
