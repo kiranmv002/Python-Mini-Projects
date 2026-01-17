@@ -66,6 +66,13 @@ through hands-on coding.
   the program whenever they want. This project was created to practice
   random number generation, loops, and basic user input handling in Python.
 
+- Rock Paper Scissors (CLI)  
+  This is a simple command-line Rock Paper Scissors game written in Python.
+  The user plays against the computer, which randomly selects its move.
+  The program compares both choices and displays the result of each round.
+  The game continues until the user decides to quit. This project was created
+  to practice conditional logic, loops, and basic use of the random module.
+
 ---
 
 ## Language Used
