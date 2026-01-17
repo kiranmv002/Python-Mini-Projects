@@ -23,7 +23,7 @@ def quiz_app():
 
     score = 0
 
-    print("Simple Quiz Application")
+    print("Welcome to the Simple Quiz Application")
     print("-----------------------")
 
     for q in questions:
