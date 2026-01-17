@@ -12,6 +12,7 @@ def roll_dice():
 def main():
     print("Dice Rolling Simulator")
     print("----------------------")
+    print("Press 'y' to roll the dice or 'n' to exit.\n")
     roll_count = 0
     while True:
         choice = input("Roll the dice? (y/n): ").strip().lower()
