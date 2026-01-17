@@ -29,7 +29,7 @@ def create_password(length):
 def start():
     print("Simple Password Generator")
     print("-------------------------")
-
+    print("Generate a strong password in a few seconds.\n")
     user_length = input("Enter password length: ")
 
     if not user_length.isdigit():
