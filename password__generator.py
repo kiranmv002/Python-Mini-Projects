@@ -1,4 +1,4 @@
-"""
+-"""
 Password Generator (Console Based)
 
 This program creates a random password using
@@ -50,6 +50,7 @@ def start():
 
     print("\nYour generated password is:")
     print(generated_password)
+    print("Password length:", len(generated_password))
     print("\nNote: Keep this password secure and do not share it with anyone.")
     
 
