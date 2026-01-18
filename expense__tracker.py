@@ -45,7 +45,7 @@ def view_total():
 
 
 def main():
-    print("Welcome to Expense Tracker")
+    print("Welcome to the Expense Tracker Application")
 
     while True:
         show_menu()
