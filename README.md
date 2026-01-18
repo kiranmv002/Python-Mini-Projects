@@ -73,6 +73,13 @@ through hands-on coding.
   The game continues until the user decides to quit. This project was created
   to practice conditional logic, loops, and basic use of the random module.
 
+- Expense Tracker (CLI)  
+  A simple command-line expense tracker built using Python.
+  The program allows users to add daily expenses, view all
+  recorded expenses, and calculate the total amount spent.
+  This project was created to practice lists, calculations,
+  and menu-driven program logic.
+
 ---
 
 ## Language Used
