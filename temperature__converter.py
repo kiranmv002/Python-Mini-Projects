@@ -48,7 +48,7 @@ def main():
 	
 
         elif choice == "3":
-            print("Exiting Temperature Converter. Goodbye!")
+            print("Exiting Temperature Converter. Thank you for using the program!")
             break
         else:
             print("Invalid choice. Please try again.")
