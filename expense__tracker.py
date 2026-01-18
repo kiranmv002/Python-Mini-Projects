@@ -37,7 +37,7 @@ def view_expenses():
     print("\nExpenses:")
     for i, exp in enumerate(expenses, start=1):
         print(f"{i}. {exp['name']} - ₹{exp['amount']}")
-
+	print("Total number of expenses:", len(expenses))
 
 def view_total():
     total = sum(exp["amount"] for exp in expenses)
