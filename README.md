@@ -80,6 +80,12 @@ through hands-on coding.
   This project was created to practice lists, calculations,
   and menu-driven program logic.
 
+- Random Quote Generator  
+  A simple command-line program written in Python that displays a
+  random motivational quote each time it is executed. This project
+  was created to practice lists, random selection, and basic program
+  structure.
+
 ---
 
 ## Language Used
