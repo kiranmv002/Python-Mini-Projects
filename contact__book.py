@@ -1,4 +1,4 @@
-\"""
+"""
 Contact Book (Command Line Application)
 
 This program is used to store and manage contact details.
