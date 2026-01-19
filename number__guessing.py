@@ -52,8 +52,8 @@ def number_guessing_game():
         again = input("\nDo you want to play again? (y/n): ").lower()
 
         if again != "y":
-	    print("Game over! Thanks for playing the number guessing game.")
-            break
+           print("Game over! Thanks for playing the number guessing game.")
+           break
 
 
 if __name__ == "__main__":
