@@ -1,4 +1,4 @@
--"""
+"""
 Password Generator (Console Based)
 
 This program creates a random password using
