@@ -86,6 +86,12 @@ through hands-on coding.
   was created to practice lists, random selection, and basic program
   structure.
 
+- Student Record Management System (CLI)  
+  A command-line based student record management system written in Python.
+  The program allows users to add, view, search, and delete student records
+  using a simple menu-driven interface. This project was created to practice
+  lists, dictionaries, and basic CRUD operations.
+
 ---
 
 ## Language Used
