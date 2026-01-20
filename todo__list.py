@@ -79,6 +79,7 @@ def main():
             break
         else:
             print("Invalid option. Please try again.")
+
 	print(f"Total tasks: {len(tasks)}")
 
 if __name__ == "__main__":
