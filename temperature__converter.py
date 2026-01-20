@@ -33,7 +33,8 @@ def main():
             c = float(value)
             f = celsius_to_fahrenheit(c)
             print(f"{c}°C = {f:.2f}°F")
-	    print("Converted from Celsius to Fahrenheit.\n")
+   	    print("Converted from Celsius to Fahrenheit.\n")
+
 	
         elif choice == "2":
             value = input("Enter temperature in Fahrenheit: ")
