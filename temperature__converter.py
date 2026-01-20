@@ -33,9 +33,8 @@ def main():
             c = float(value)
             f = celsius_to_fahrenheit(c)
             print(f"{c}°C = {f:.2f}°F")
-	    print("Converted from Celsius to Fahrenheit.\n")
+            print("Converted from Celsius to Fahrenheit.\n")
 
-	
         elif choice == "2":
             value = input("Enter temperature in Fahrenheit: ")
             if not value.replace('.', '', 1).isdigit():
@@ -47,8 +46,6 @@ def main():
             print(f"{f}°F = {c:.2f}°C")
             print("Converted from Fahrenheit to Celsius.\n")
 
-	
-
         elif choice == "3":
             print("Exiting Temperature Converter. Thank you for using the program!")
             break
@@ -58,15 +55,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
-
-
 
 
 
