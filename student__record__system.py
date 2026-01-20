@@ -44,7 +44,7 @@ def view_students():
     print("\nStudent Records:")
     for s in students:
         print(f"Name: {s['name']} | Roll No: {s['roll_no']} | Marks: {s['marks']}")
-
+    print("Total students:", len(students))
 
 def search_student():
     roll_no = input("Enter roll number to search: ").strip()
