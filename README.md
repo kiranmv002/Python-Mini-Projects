@@ -92,6 +92,10 @@ through hands-on coding.
   using a simple menu-driven interface. This project was created to practice
   lists, dictionaries, and basic CRUD operations.
 
+- Word Counter  
+  A simple Python program that counts the frequency of words
+  in a given sentence.
+
 ---
 
 ## Language Used
