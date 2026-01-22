@@ -101,6 +101,11 @@ through hands-on coding.
   based on length and character composition. This project was created
   to practice string handling and conditional logic.
 
+- Notes Application  
+  A simple Python program that allows users to save and view notes
+  using a text file. This project was created to practice basic
+  file handling operations.
+
 ---
 
 ## Language Used
