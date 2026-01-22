@@ -96,6 +96,11 @@ through hands-on coding.
   A simple Python program that counts the frequency of words
   in a given sentence.
 
+- Password Strength Checker  
+  A simple Python utility that checks the strength of a password
+  based on length and character composition. This project was created
+  to practice string handling and conditional logic.
+
 ---
 
 ## Language Used
