@@ -7,7 +7,8 @@ for word in words:
     word_count[word] = word_count.get(word, 0) + 1
 
 print("\nWord frequency:")
-for word, count in word_count.items():
-    print(word, ":", count)
+for word in sorted(word_count):
+    print(word, ":", word_count[word])
+
 print("\nTotal words:", len(words))
 
