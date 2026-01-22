@@ -12,8 +12,12 @@ while choice != "3":
     choice = input("Enter choice: ")
 
     if choice == "1":
-        note = input("Enter note: ")
-        if note:
+        note = input("Enter note: ").strip()
+	if not note:
+    	   print("Note cannot be empty.")
+           continue
+
+	if note:
             file = open("notes.txt", "a")
             file.write(note + "\n")
             file.close()
