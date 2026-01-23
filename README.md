@@ -106,6 +106,11 @@ through hands-on coding.
   using a text file. This project was created to practice basic
   file handling operations.
 
+- Log File Analyzer  
+  A simple Python program that reads a log file and counts
+  error, warning, and info messages. This project was created
+  to practice file handling and basic text processing.
+
 ---
 
 ## Language Used
