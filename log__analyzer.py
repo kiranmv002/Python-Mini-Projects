@@ -7,7 +7,7 @@ infos = 0
 
 try:
     file = open("sample.log", "r")
-
+    lines = file.readlines()	
     for line in file:
         if "ERROR" in line:
             errors += 1
@@ -22,6 +22,6 @@ try:
     print("Errors  :", errors)
     print("Warnings:", warnings)
     print("Info    :", infos)
-
+    print("Total log lines:", len(lines))
 except FileNotFoundError:
     print("Log file not found.")
