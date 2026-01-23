@@ -33,7 +33,7 @@ while choice != "3":
             print("No notes found.")
 
     elif choice == "3":
-        print("Exiting Notes App.")
+        print("Exiting Notes App. Your notes are saved.")
 
     else:
         print("Invalid choice.")
