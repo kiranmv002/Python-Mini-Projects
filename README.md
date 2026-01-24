@@ -111,6 +111,11 @@ through hands-on coding.
   error, warning, and info messages. This project was created
   to practice file handling and basic text processing.
 
+- File Organizer Tool  
+  A simple Python script that organizes files in a folder based on
+  their file extensions. This project was created to practice basic
+  file handling and automation using Python.
+
 ---
 
 ## Language Used
