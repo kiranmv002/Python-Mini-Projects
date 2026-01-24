@@ -1,4 +1,4 @@
-# Python Mini Projects
+\# Python Mini Projects
 
 This repository contains simple and beginner-friendly Python mini projects
 created to practice core Python concepts and improve logical thinking
@@ -115,6 +115,7 @@ through hands-on coding.
   A simple Python script that organizes files in a folder based on
   their file extensions. This project was created to practice basic
   file handling and automation using Python.
+
 
 ---
 
