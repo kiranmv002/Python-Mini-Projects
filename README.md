@@ -116,6 +116,10 @@ through hands-on coding.
   their file extensions. This project was created to practice basic
   file handling and automation using Python.
 
+- Mini Banking System  
+  A simple command-line program written in Python that simulates
+  basic banking operations such as checking balance, depositing
+  money, and withdrawing money.
 
 ---
 
