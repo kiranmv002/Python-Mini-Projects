@@ -121,6 +121,11 @@ through hands-on coding.
   basic banking operations such as checking balance, depositing
   money,and withdrawing money.
 
+- Attendance Management System  
+  A simple Python program to mark and view student attendance.
+  Attendance records are stored in a file so they can be viewed later.
+  This project was created to practice file handling and basic logic.
+
 ---
 
 ## Language Used
