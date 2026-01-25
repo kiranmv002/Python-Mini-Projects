@@ -119,7 +119,7 @@ through hands-on coding.
 - Mini Banking System  
   A simple command-line program written in Python that simulates
   basic banking operations such as checking balance, depositing
-  money, and withdrawing money.
+  money,and withdrawing money.
 
 ---
 
