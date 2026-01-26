@@ -127,6 +127,10 @@ through hands-on coding.
   records are saved in a file. The program also shows the total
   number of present and absent students.
 
+- Login and Registration System  
+  A simple Python program where users can register and log in using
+  a username and password. User details are saved in a file.
+
 ---
 
 ## Language Used
