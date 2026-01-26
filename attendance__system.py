@@ -1,5 +1,8 @@
 # Attendance Management System
-# Simple file-based attendance tracker
+# Improved version with summary count
+
+present = 0
+absent = 0
 
 while True:
     print("\n1. Mark Attendance")
@@ -12,13 +15,18 @@ while True:
         name = input("Student name: ").strip()
         status = input("Present or Absent (P/A): ").upper()
 
-        if status in ["P", "A"]:
-            file = open("attendance.txt", "a")
-            file.write(name + " - " + status + "\n")
-            file.close()
-            print("Attendance saved.")
+        if status == "P":
+            present += 1
+        elif status == "A":
+            absent += 1
         else:
             print("Invalid status.")
+            continue
+
+        file = open("attendance.txt", "a")
+        file.write(name + " - " + status + "\n")
+        file.close()
+        print("Attendance saved.")
 
     elif choice == "2":
         try:
@@ -26,6 +34,10 @@ while True:
             print("\nAttendance Records:")
             print(file.read())
             file.close()
+
+            print("Total Present:", present)
+            print("Total Absent :", absent)
+
         except FileNotFoundError:
             print("No attendance records found.")
 
@@ -35,3 +47,4 @@ while True:
 
     else:
         print("Invalid choice.")
+
