@@ -122,9 +122,10 @@ through hands-on coding.
   money,and withdrawing money.
 
 - Attendance Management System  
-  A simple Python program to mark and view student attendance.
-  Attendance records are stored in a file so they can be viewed later.
-  This project was created to practice file handling and basic logic.
+  A Simple Python program to mark student attendance.
+  The user can mark a student as present or absent, and the
+  records are saved in a file. The program also shows the total
+  number of present and absent students.
 
 ---
 
