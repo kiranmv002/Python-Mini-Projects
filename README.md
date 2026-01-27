@@ -131,6 +131,11 @@ through hands-on coding.
   A simple Python program where users can register and log in using
   a username and password. User details are saved in a file.
 
+- Text Search Tool  
+  A simple Python program that searches for a word in a text file
+  and displays how many times it appears. This project was created
+  to practice file handling and string operations.
+
 ---
 
 ## Language Used
