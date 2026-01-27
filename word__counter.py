@@ -10,6 +10,6 @@ print("\nWord frequency:")
 for word in sorted(word_count):
     print(word, ":", word_count[word])
 
-print("\nTotal words:", len(words))
-print("Unique words:", len(word_count))
+longest_word = max(word_count, key=len)
+print("Longest word:", longest_word)
 
