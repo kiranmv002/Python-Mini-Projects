@@ -2,18 +2,21 @@
 # This program simulates rolling a dice using Python.
 # The user can roll the dice multiple times if they want.
 
+
 import random
 
+roll_count = 0
 
 def roll_dice():
     return random.randint(1, 6)
 
-
 def main():
+    global roll_count
+
     print("Dice Rolling Simulator")
-    print("----------------------")
-    print("Press 'y' to roll the dice or 'n' to exit.\n")
-    roll_count = 0
+    print("-----------------------")
+    print("Press 'y' to roll the dice or 'n' to exit\n")
+
     while True:
         choice = input("Roll the dice? (y/n): ").strip().lower()
 
@@ -26,9 +29,10 @@ def main():
         elif choice == "n":
             print("Thanks for playing. Goodbye!")
             break
+
         else:
             print("Please enter y or n.\n")
 
-
 if __name__ == "__main__":
     main()
+
