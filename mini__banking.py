@@ -1,6 +1,7 @@
 # Mini Banking System
 # Simple program to manage balance
 
+
 balance = 0
 transactions = 0
 
