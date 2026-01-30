@@ -136,6 +136,11 @@ through hands-on coding.
   and displays how many times it appears. This project was created
   to practice file handling and string operations.
 
+- CSV Data Analyzer  
+  A simple Python program that reads a CSV file and displays
+  the column names and total number of rows. This project was
+  created to practice basic CSV file handling.
+
 ---
 
 ## Language Used
