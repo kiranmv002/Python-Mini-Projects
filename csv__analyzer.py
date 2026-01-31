@@ -12,8 +12,13 @@ try:
 
     file.close()
 
+    marks = []
+
+    for row in rows:
+        marks.append(int(row[2]))  # marks column
     print("Columns:", header)
     print("Total rows:", len(rows))
-
+    print("Highest marks:", max(marks))
+    print("Lowest marks :", min(marks))
 except FileNotFoundError:
     print("CSV file not found.")
