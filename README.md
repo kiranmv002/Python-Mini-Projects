@@ -6,6 +6,21 @@ through hands-on coding.
 
 ---
 
+## Highlighted Projects
+
+These projects show practical problem solving and real-world usage:
+
+- Mini Banking System
+- Attendance Management System
+- File Organizer Tool
+- Login and Registration System
+- Expense Tracker
+- CSV Data Analyzer
+- Text Search Tool
+
+
+
+
 ## Projects
 
 - Hello World  
