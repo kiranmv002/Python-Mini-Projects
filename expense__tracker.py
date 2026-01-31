@@ -15,7 +15,7 @@ def show_menu():
 
 def add_expense():
     name = input("Enter expense name: ").strip()
-    amount = input("Enter amount: ").strip()
+    amount = input("Enter expense amount: ").strip()
 
     if name == "" or not amount.isdigit():
         print("Invalid expense details.")
