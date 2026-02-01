@@ -182,3 +182,16 @@ Through these mini projects, I practiced writing simple Python programs
 using functions, loops, lists, and dictionaries. I also learned how to
 handle user input, validate data, and improve programs step by step
 based on new requirements.
+
+
+---
+
+## How to Run the Projects
+
+1. Make sure Python is installed on your system.
+2. Clone this repository or download the files.
+3. Open a terminal in the project folder.
+4. Run any project using:
+
+   python filename.py
+
