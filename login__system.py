@@ -40,7 +40,7 @@ while True:
             print("No users found. Please register first.")
 
     elif choice == "3":
-        print("Exit.")
+        print("Exiting program.")
         break
 
     else:
