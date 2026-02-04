@@ -1,3 +1,4 @@
+
 # Simple Log File Analyzer
 # Counts different types of log messages
 
@@ -23,5 +24,6 @@ try:
     print("Warnings:", warnings)
     print("Info    :", infos)
     print("Total log lines:", len(lines))
+    
 except FileNotFoundError:
     print("Log file not found.")
