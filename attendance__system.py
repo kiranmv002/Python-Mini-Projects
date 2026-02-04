@@ -1,3 +1,4 @@
+
 # Attendance Management System
 # Improved version with summary count
 
@@ -8,7 +9,7 @@ absent = 0
 while True:
     print("\n1. Mark Attendance")
     print("2. View Attendance")
-    print("3. Exit")
+    print("3. Exit ")
 
     choice = input("Enter choice: ")
 
