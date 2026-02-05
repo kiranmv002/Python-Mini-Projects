@@ -3,8 +3,10 @@
 This program is created to practice basic Python concepts
 like functions, conditions, and user input handling.
 
+
 Author: Kiran
 """
+
 
 def show_menu():
     print("\n====== CALCULATOR MENU ======")
@@ -74,6 +76,7 @@ def main():
             result = modulus_numbers(num1, num2)
             operation = "Modulus"
 
+        
         print(f"{operation} Result: {result}")
 
 
