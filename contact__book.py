@@ -1,3 +1,4 @@
+
 """
 Contact Book (Command Line Application)
 
@@ -41,7 +42,7 @@ def add_contact():
         print("Phone number must be exactly 10 digits.")
         return
 
-    # Check for duplicate contact name
+    # Check duplicate contact name
     for contact in contacts:
         if contact["name"].lower() == name.lower():
             print("Contact with this name already exists.")
