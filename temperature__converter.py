@@ -18,7 +18,7 @@ def fahrenheit_to_celsius(fahrenheit):
 
 
 def main():
-    print("Welcome to Temperature Converter")
+    print("Welcome to the  Temperature Converter")
 
     while True:
         show_menu()
