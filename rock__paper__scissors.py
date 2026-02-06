@@ -41,7 +41,7 @@ def main():
             continue
 
         play_round(user_input)
-        print()  # empty line for better output formatting
+        print()  ## empty line for better output formatting
 
 
 if __name__ == "__main__":
