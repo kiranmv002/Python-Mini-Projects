@@ -10,7 +10,6 @@ Author: Kiran
 
 import random
 
-
 def play_game():
     start = 1
     end = 50
