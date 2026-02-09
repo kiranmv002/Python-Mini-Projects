@@ -14,7 +14,7 @@ def main():
     global roll_count
 
     print("Dice Rolling Simulator")
-    print("-----------------------")
+    print("----------------------")
     print("Press 'y' to roll the dice or 'n' to exit\n")
 
     while True:
