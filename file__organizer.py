@@ -1,4 +1,4 @@
-# Simple File Organizer
+# Simple file organizer
 # Organizes files in a folder based on file extension
 
 import os
@@ -18,5 +18,6 @@ for file_name in os.listdir(folder_path):
             os.mkdir(new_folder)
 
         shutil.move(file_path, os.path.join(new_folder, file_name))
+
 
 print("Files organized successfully.")
