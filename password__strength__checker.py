@@ -2,7 +2,7 @@
 # This program checks the strength of a password
 # based on simple rules.
 
-password = input("Enter a password: ")
+password = input("Enter a Password: ")
 
 length_ok = len(password) >= 8
 has_digit = any(char.isdigit() for char in password)
@@ -15,3 +15,4 @@ elif length_ok and has_digit:
     print("Password Strength: Medium")
 else:
     print("Password Strength: Weak")
+
