@@ -48,5 +48,6 @@ def quiz_app():
     print("\nQuiz Finished")
     print(f"You scored {score} out of {len(questions)}")
 
+
 if __name__ == "__main__":
     quiz_app()
