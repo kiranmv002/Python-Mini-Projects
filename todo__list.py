@@ -2,8 +2,7 @@
 To-Do List Application (Command Line)
 
 This program allows the user to add, view, and remove tasks
-using a simple menu-driven interface. It is created to practice
-lists, loops, and user input handling in Python.
+using a simple menu-driven interface. It is created to practice lists, loops, and user input handling in Python.
 
 Author: Kiran
 """
