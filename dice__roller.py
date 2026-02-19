@@ -2,7 +2,6 @@
 # This program simulates rolling a dice using Python.
 # The user can roll the dice multiple times if they want.
 
-
 import random
 
 roll_count = 0
@@ -31,7 +30,9 @@ def main():
             break
 
         else:
-            print("Please enter y or n.\n")
+            print("Please enter y or n 
+\n")
+
 
 if __name__ == "__main__":
     main()
