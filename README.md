@@ -1,3 +1,4 @@
+
 ## 🚀 Python Mini Projects
 
 This repository contains simple and beginner-friendly Python mini projects
