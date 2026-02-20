@@ -2,7 +2,6 @@
 # Attendance Management System
 # Improved version with summary count
 
-
 present = 0
 absent = 0
 
