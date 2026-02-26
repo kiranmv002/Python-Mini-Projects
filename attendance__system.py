@@ -1,51 +1,94 @@
+"""
+Attendance Management System (Improved Version)
 
-# Attendance Management System
-# Improved version with summary count
+Features:
+- Mark student attendance
+- View attendance records
+- Automatically calculates total Present and Absent
+- Uses proper file handling (with open)
 
-present = 0
-absent = 0
+Author: Kiran
+"""
 
-while True:
-    print("\n1. Mark Attendance")
-    print("2. View Attendance")
-    print("3. Exit ")
 
-    choice = input("Enter choice: ")
+def count_attendance():
+    """Counts total Present and Absent from file"""
+    present = 0
+    absent = 0
 
-    if choice == "1":
-        name = input("Student name: ").strip()
-        status = input("Present or Absent (P/A): ").upper()
+    try:
+        with open("attendance.txt", "r") as file:
+            for line in file:
+                if "- P" in line:
+                    present += 1
+                elif "- A" in line:
+                    absent += 1
+    except FileNotFoundError:
+        pass
 
-        if status == "P":
-            present += 1
-        elif status == "A":
-            absent += 1
-        else:
-            print("Invalid status.")
-            continue
+    return present, absent
 
-        file = open("attendance.txt", "a")
+
+def mark_attendance():
+    """Marks attendance for a student"""
+    name = input("Student name: ").strip()
+    status = input("Present or Absent (P/A): ").upper()
+
+    if status not in ["P", "A"]:
+        print("Invalid status. Please enter P or A.")
+        return
+
+    with open("attendance.txt", "a") as file:
         file.write(name + " - " + status + "\n")
-        file.close()
-        print("Attendance saved.")
 
-    elif choice == "2":
-        try:
-            file = open("attendance.txt", "r")
+    print("Attendance saved successfully.")
+
+
+def view_attendance():
+    """Displays attendance records and summary"""
+    try:
+        with open("attendance.txt", "r") as file:
             print("\nAttendance Records:")
             print(file.read())
-            file.close()
 
-            print("Total Present:", present)
-            print("Total Absent :", absent)
+        present, absent = count_attendance()
+        total = present + absent
 
-        except FileNotFoundError:
-            print("No attendance records found.")
+        print("Total Students:", total)
+        print("Total Present :", present)
+        print("Total Absent  :", absent)
 
-    elif choice == "3":
-        print("Exiting Attendance System.")
-        break
+        if total > 0:
+            percentage = (present / total) * 100
+            print("Attendance Percentage: {:.2f}%".format(percentage))
 
-    else:
-        print("Invalid choice.")
+    except FileNotFoundError:
+        print("No attendance records found.")
 
+
+def main():
+    print("===== Attendance Management System =====")
+
+    while True:
+        print("\n1. Mark Attendance")
+        print("2. View Attendance")
+        print("3. Exit")
+
+        choice = input("Enter choice: ")
+
+        if choice == "1":
+            mark_attendance()
+
+        elif choice == "2":
+            view_attendance()
+
+        elif choice == "3":
+            print("Exiting Attendance System. Goodbye!")
+            break
+
+        else:
+            print("Invalid choice. Please select again.")
+
+
+if __name__ == "__main__":
+    main()
