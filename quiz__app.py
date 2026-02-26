@@ -1,52 +1,78 @@
-# Quiz Application (CLI)
-# This program asks the user a few questions and
-# calculates the final score.
+"""
+Quiz Application (CLI)
+
+This program asks multiple programming-related questions,
+validates user input, and calculates the final score.
+
+Author: Kiran
+"""
+
 
 def quiz_app():
     questions = [
         {
-            "question": "Which keyword is used to define a function in Python?",
-            "options": ["A. function", "B. def", "C. define", "D. fun"],
+            "question": "Which symbol is used for comments in Python?",
+            "options": ["A. //", "B. <!-- -->", "C. #", "D. **"],
+            "answer": "C"
+        },
+        {
+            "question": "Which data structure stores key-value pairs in Python?",
+            "options": ["A. List", "B. Tuple", "C. Dictionary", "D. Set"],
+            "answer": "C"
+        },
+        {
+            "question": "What is the correct file extension for Python files?",
+            "options": ["A. .py", "B. .java", "C. .ppt", "D. .html"],
+            "answer": "A"
+        },
+        {
+            "question": "Which loop is used when the number of iterations is known?",
+            "options": ["A. while loop", "B. for loop", "C. do-while loop", "D. infinite loop"],
             "answer": "B"
         },
         {
-            "question": "What is the output of print(2 + 3 * 2)?",
-            "options": ["A. 10", "B. 7", "C. 12", "D. 8"],
-            "answer": "B"
-        },
-        {
-            "question": "Which data type is used to store text in Python?",
-            "options": ["A. int", "B. float", "C. string", "D. str"],
-            "answer": "D"
+            "question": "Which function is used to take input from the user in Python?",
+            "options": ["A. get()", "B. scanf()", "C. input()", "D. read()"],
+            "answer": "C"
         }
     ]
 
     score = 0
 
-    print("Welcome to the Simple Quiz Application")
-    print("-----------------------")
+    print("===== Welcome to the Programming Quiz =====")
 
-    for q in questions:
-        print("\n" + q["question"])
+    for index, q in enumerate(questions, start=1):
+        print(f"\nQuestion {index}: {q['question']}")
         for option in q["options"]:
             print(option)
 
-        user_answer = input("Enter your answer (A/B/C/D): ").strip().upper()
-	
-	if user_answer not in ["A", "B", "C", "D"]:
-            print("Please enter a valid option (A, B, C, or D).")
-            continue
+        # Input validation loop
+        while True:
+            user_answer = input("Enter your answer (A/B/C/D): ").strip().upper()
+            if user_answer in ["A", "B", "C", "D"]:
+                break
+            else:
+                print("Please enter a valid option (A, B, C, or D).")
 
         if user_answer == q["answer"]:
-            print("Correct!")
+            print("Correct! ✅")
             score += 1
         else:
-            print("Wrong answer.")
+            print("Wrong answer ❌")
             print(f"The correct answer was: {q['answer']}")
 
-	
-    print("\nQuiz Finished")
+    print("\n===== Quiz Finished =====")
     print(f"You scored {score} out of {len(questions)}")
+
+    percentage = (score / len(questions)) * 100
+    print(f"Your percentage: {percentage:.2f}%")
+
+    if percentage >= 80:
+        print("Excellent Performance! 🌟")
+    elif percentage >= 50:
+        print("Good Job 👍")
+    else:
+        print("Keep Practicing 💪")
 
 
 if __name__ == "__main__":
