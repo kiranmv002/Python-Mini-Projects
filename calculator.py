@@ -1,8 +1,8 @@
-"""Simple Calculator (CLI Based)
+"""
+Simple Calculator (CLI Based)
 
 This program is created to practice basic Python concepts
 like functions, conditions, and user input handling.
-
 
 Author: Kiran
 """
@@ -21,6 +21,7 @@ def show_menu():
 def add_numbers(x, y):
     return x + y
 
+
 def subtract_numbers(x, y):
     return x - y
 
@@ -35,8 +36,12 @@ def divide_numbers(a, b):
         return "Error: Division by zero"
     return a / b
 
+
 def modulus_numbers(x, y):
+    if y == 0:
+        return "Error: Modulus by zero"
     return x % y
+
 
 def main():
     print("Welcome to the Simple Calculator")
@@ -72,11 +77,10 @@ def main():
         elif choice == "4":
             result = divide_numbers(num1, num2)
             operation = "Division"
-         elif choice == "5":
+        elif choice == "5":
             result = modulus_numbers(num1, num2)
             operation = "Modulus"
 
-        
         print(f"{operation} Result: {result}")
 
 
