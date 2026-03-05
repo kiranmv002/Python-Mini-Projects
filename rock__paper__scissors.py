@@ -1,47 +1,50 @@
-# Rock Paper Scissors Game
-# The user plays against the computer.
-# The game continues until the user decides to quit.
+"""
+Rock Paper Scissors Game
+
+User plays against the computer.
+Type rock, paper, or scissors to play.
+Type quit to stop the game.
+
+Author: Kiran
+"""
 
 import random
 
 
 def play_round(user_choice):
-    options = ["rock", "paper", "scissors"]
-    computer_choice = random.choice(options)
+    choices = ["rock", "paper", "scissors"]
+    computer = random.choice(choices)
 
-    print("Computer chose:", computer_choice)
+    print("Computer chose:", computer)
 
-    if user_choice == computer_choice:
-        print("Result: It's a tie.")
-    elif (
-        (user_choice == "rock" and computer_choice == "scissors") or
-        (user_choice == "paper" and computer_choice == "rock") or
-        (user_choice == "scissors" and computer_choice == "paper")
-    ):
-        print("Result: You win!")
+    if user_choice == computer:
+        print("It's a tie.")
+    elif user_choice == "rock" and computer == "scissors":
+        print("You win!")
+    elif user_choice == "paper" and computer == "rock":
+        print("You win!")
+    elif user_choice == "scissors" and computer == "paper":
+        print("You win!")
     else:
-        print("Result: Computer wins!")
+        print("Computer wins!")
 
 
 def main():
-    print("Rock Paper Scissors")
-    print("-------------------")
-    print("Type rock, paper, or scissors to play.")
-    print("Type quit to exit the game.\n")
+    print("Rock Paper Scissors Game")
+    print("------------------------")
 
     while True:
-        user_input = input("Your choice: ").strip().lower()
+        user = input("\nEnter rock, paper, scissors or quit: ").lower()
 
-        if user_input == "quit":
-            print("Thanks for playing. See you next time!")
+        if user == "quit":
+            print("Thanks for playing!")
             break
 
-        if user_input not in ["rock", "paper", "scissors"]:
-            print("Invalid input. Please try again.\n")
+        if user not in ["rock", "paper", "scissors"]:
+            print("Invalid choice. Try again.")
             continue
 
-        play_round(user_input)
-        print()  ## empty line for better output formatting
+        play_round(user)
 
 
 if __name__ == "__main__":
