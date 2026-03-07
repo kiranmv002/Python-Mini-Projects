@@ -1,5 +1,9 @@
-# Simple Notes Application
-# This program saves notes in a text file.
+"""
+Simple Notes Application
+This program saves and displays notes using a text file.
+
+Author: Kiran
+"""
 
 choice = ""
 
@@ -13,15 +17,16 @@ while choice != "3":
 
     if choice == "1":
         note = input("Enter note: ").strip()
-	if not note:
-    	   print("Note cannot be empty.")
-           continue
 
-	if note:
-            file = open("notes.txt", "a")
-            file.write(note + "\n")
-            file.close()
-            print("Note saved.")
+        if not note:
+            print("Note cannot be empty.")
+            continue
+
+        file = open("notes.txt", "a")
+        file.write(note + "\n")
+        file.close()
+
+        print("Note saved.")
 
     elif choice == "2":
         try:
