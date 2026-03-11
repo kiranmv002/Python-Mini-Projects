@@ -1,19 +1,27 @@
-# Text Search Tool
-# Searches for a word inside a text file
+"""
+Text Search Tool
 
-word = input("Enter word to search: ").lower()
+Searches for a word inside a text file.
 
-try:
-    file = open("sample.txt", "r")
-    content = file.read().lower()
-    file.close()
+Author: Kiran
+"""
 
-    count = content.count(word)
+word = input("Enter word to search: ").strip().lower()
 
-    if count > 0:
-        print(f"'{word}' found {count} times.")
-    else:
-        print(f"'{word}' not found.")
+if not word:
+    print("Search word cannot be empty.")
 
-except FileNotFoundError:
-    print("Text file not found.")
+else:
+    try:
+        with open("sample.txt", "r") as file:
+            content = file.read().lower()
+
+        count = content.count(word)
+
+        if count > 0:
+            print(f"'{word}' found {count} times in the file.")
+        else:
+            print(f"'{word}' not found in the file.")
+
+    except FileNotFoundError:
+        print("Text file not found.")
