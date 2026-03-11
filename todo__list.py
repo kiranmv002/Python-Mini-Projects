@@ -2,7 +2,7 @@
 To-Do List Application (Command Line)
 
 This program allows the user to add, view, and remove tasks
-using a simple menu-driven interface. It is created to practice lists, loops, and user input handling in Python.
+using a simple menu-driven interface.
 
 Author: Kiran
 """
@@ -28,9 +28,12 @@ def view_tasks():
     for index, task in enumerate(tasks, start=1):
         print(f"{index}. {task}")
 
+    print("Total tasks:", len(tasks))
+
 
 def add_task():
     task = input("Enter a new task: ").strip()
+
     if task:
         tasks.append(task)
         print("Task added successfully.")
@@ -74,13 +77,10 @@ def main():
             remove_task()
         elif option == "4":
             print("\nYou have exited the To-Do List.")
-            print("Good luck with your tasks. See you next time!")
+            print("Good luck with your tasks!")
             break
         else:
             print("Invalid option. Please try again.")
-
-
-print(f"Total tasks: {len(tasks)}")
 
 
 if __name__ == "__main__":
