@@ -33,11 +33,13 @@ def play_game():
     start, end, attempts = choose_difficulty()
     secret = random.randint(start, end)
 
-    print("\nI am thinking of a number between", start, "and", end)
-    print("You have", attempts, "attempts.\n")
+    print(f"\nI am thinking of a number between {start} and {end}")
+    print(f"You have {attempts} attempts.\n")
+
+    attempt_number = 1
 
     while attempts > 0:
-        guess = input("Enter your guess: ")
+        guess = input(f"Attempt {attempt_number} - Enter your guess: ")
 
         if not guess.isdigit():
             print("Please enter a valid number.\n")
@@ -45,8 +47,12 @@ def play_game():
 
         guess = int(guess)
 
+        if guess < start or guess > end:
+            print(f"Please enter a number between {start} and {end}.\n")
+            continue
+
         if guess == secret:
-            print("Correct! You guessed the number.")
+            print("🎉 Correct! You guessed the number.")
             return
         elif guess < secret:
             print("Too small.\n")
@@ -54,6 +60,7 @@ def play_game():
             print("Too large.\n")
 
         attempts -= 1
+        attempt_number += 1
         print("Attempts left:", attempts, "\n")
 
     print("You lost! The correct number was", secret)
