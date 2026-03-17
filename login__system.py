@@ -1,5 +1,11 @@
+"""
+Simple Login and Registration System
 
-# Simple Login and Registration System
+This program allows users to register and login
+using a text file.
+
+Author: Kiran
+"""
 
 while True:
     print("\n1. Register")
@@ -9,28 +15,45 @@ while True:
     choice = input("Choice: ")
 
     if choice == "1":
-        user = input("Username: ")
-        pwd = input("Password: ")
+        user = input("Username: ").strip()
+        pwd = input("Password: ").strip()
 
-        f = open("users.txt", "a")
-        f.write(user + "," + pwd + "\n")
-        f.close()
+        if not user or not pwd:
+            print("Username and password cannot be empty.")
+            continue
 
-        print("Registered successfully.")
+        # check duplicate username
+        exists = False
+        try:
+            with open("users.txt", "r") as f:
+                for line in f:
+                    u, _ = line.strip().split(",")
+                    if u == user:
+                        exists = True
+                        break
+        except FileNotFoundError:
+            pass
+
+        if exists:
+            print("Username already exists. Try another.")
+        else:
+            with open("users.txt", "a") as f:
+                f.write(user + "," + pwd + "\n")
+            print("Registered successfully.")
 
     elif choice == "2":
-        user = input("Username: ")
-        pwd = input("Password: ")
+        user = input("Username: ").strip()
+        pwd = input("Password: ").strip()
+
         success = False
 
         try:
-            f = open("users.txt", "r")
-            for line in f:
-                u, p = line.strip().split(",")
-                if u == user and p == pwd:
-                    success = True
-                    break
-            f.close()
+            with open("users.txt", "r") as f:
+                for line in f:
+                    u, p = line.strip().split(",")
+                    if u == user and p == pwd:
+                        success = True
+                        break
 
             if success:
                 print("Login successful.")
