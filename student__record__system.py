@@ -1,6 +1,7 @@
 # Student Record Management System
 # This program manages student records using a menu-driven approach.
 
+
 students = []
 
 
