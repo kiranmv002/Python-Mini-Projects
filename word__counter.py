@@ -14,6 +14,7 @@ sentence = input("Enter a sentence: ").strip()
 if not sentence:
     print("Sentence cannot be empty.")
 
+
 else:
     # remove punctuation
     sentence = sentence.translate(str.maketrans("", "", string.punctuation))
