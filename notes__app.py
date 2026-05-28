@@ -2,7 +2,7 @@
 Simple Notes Application
 This program saves and displays notes using a text file.
 
-Author: Kiran
+Author: Kiran. 
 """
 
 choice = ""
