@@ -4,14 +4,15 @@ Expense Tracker (CLI)
 This program helps users track daily expenses
 and calculate the total amount spent.
 
-Author: Kiran
+Author: Kiran. 
 """
 
 expenses = []
 
 
+
 def show_menu():
-    print("\nExpense Tracker Menu")
+    print("\n Expense Tracker Menu")
     print("1. Add expense")
     print("2. View expenses")
     print("3. View total amount")
