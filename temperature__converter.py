@@ -4,7 +4,7 @@ Temperature Converter (CLI)
 This program converts temperature between
 Celsius, Fahrenheit, and Kelvin.
 
-Author: Kiran
+
 """
 
 history = []
