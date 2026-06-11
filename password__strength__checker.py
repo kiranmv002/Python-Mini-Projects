@@ -4,7 +4,7 @@ Password Strength Checker
 This program checks the strength of a password
 based on multiple security rules.
 
-Author: Kiran
+
 """
 
 
