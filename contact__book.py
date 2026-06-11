@@ -6,7 +6,7 @@ This program is used to store and manage contact details.
 Each contact contains a name and a phone number.
 The user can add, view, search, and delete contacts.
 
-Author: Kiran
+
 """
 
 contacts = []
