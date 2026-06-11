@@ -5,7 +5,7 @@ User plays against the computer.
 Type rock, paper, or scissors to play.
 Type quit to stop the game.
 
-Author: Kiran
+
 """
 
 import random
