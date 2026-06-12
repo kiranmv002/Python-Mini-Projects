@@ -3,7 +3,6 @@ Text Search Tool
 
 Searches for a word inside a text file.
 
-Author: Kiran
 """
 
 word = input("Enter word to search: ").strip().lower()
