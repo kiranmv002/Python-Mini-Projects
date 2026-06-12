@@ -4,7 +4,6 @@ Quiz Application (CLI)
 This program asks multiple programming-related questions,
 validates user input, and calculates the final score.
 
-Author: Kiran
 """
 
 
