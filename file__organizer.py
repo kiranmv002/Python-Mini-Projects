@@ -3,7 +3,7 @@ Simple File Organizer
 
 Organizes files in a folder based on file extension.
 
-Author: Kiran
+
 """
 
 import os
