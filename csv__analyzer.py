@@ -4,7 +4,6 @@ CSV Data Analyzer
 Reads a CSV file and shows basic details.
 
 
-Author: Kiran
 """
 
 import csv
