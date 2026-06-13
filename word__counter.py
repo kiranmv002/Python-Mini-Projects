@@ -4,7 +4,6 @@ Word Frequency Counter
 This program counts how many times each word
 appears in a sentence and shows the longest word.
 
-Author: Kiran
 """
 
 import string
