@@ -4,7 +4,6 @@ Simple Login and Registration System
 This program allows users to register and login
 using a text file.
 
-Author: Kiran
 """
 
 while True:
