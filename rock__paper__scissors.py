@@ -1,9 +1,7 @@
 """
 Rock Paper Scissors Game
 
-User plays against the computer.
-Type rock, paper, or scissors to play.
-Type quit to stop the game.
+User plays against the computer. Type rock, paper, or scissors to play. Type quit to stop the game.
 
 
 """
