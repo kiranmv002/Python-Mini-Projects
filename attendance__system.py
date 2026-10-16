@@ -4,7 +4,7 @@ Attendance Management System (Improved Version)
 Features:
 - Mark student attendance
 - View attendance records
-- Automatically calculates total Present and Absent
+- Automatically calculates total Present & Absent
 - Uses proper file handling (with open)
 
 Author: Kiran
